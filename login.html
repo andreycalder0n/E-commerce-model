@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Sent</title>
+    <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
@@ -40,7 +40,6 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 30rem;
-            justify-items: center;
         }
         .logo {
             width: 15rem;
@@ -48,47 +47,52 @@
             justify-self: center;
             display: none;
         }
-        .title {
-            font-size: var(--lg);
-            margin-bottom: 1.2rem;
-            text-align: center;
-            font-weight: bold;
-        }
-        .subtitle {
-            color: var(--very-light-pink);
-            font-size: var(--md);
-            font-weight: 300;
-            margin-top: 0;
-            margin-bottom: 3.2rem;
-            text-align: center;
-        }
-        .email-image {
-            width: 100%;
-            height: 13.2rem;
-            border-radius: 50%;
-            background-color: var(--text-input-field);
+        .form {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
         }
-        .email-image img {
-            width: 8rem;
-        }
-        .resend {
-            font-size: var(--sm);
-        }
-        .resend span {
-            color: var(--very-light-pink);
-        }
-        .resend a {
+        .form a {
             color: var(--hospital-green);
+            font-size: var(--sm);
+            text-align: center;
             text-decoration: none;
+            margin-bottom: 5.2rem;
+        }
+        .label {
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: .4rem;
+        }
+        .input {
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: .8rem;
+            height: 3.2rem;
+            font-size: var(--md);
+            padding: .8rem;
+            margin-bottom: 1.2rem;
+        }
+        .input-email {
+            margin-bottom: 2.0rem;
         }
         .primary-button{
             background-color: var(--hospital-green);
             border-radius: .8rem;
             border: none;
             color: var(--white);
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            cursor: hand;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 5rem;
+        }
+        .secondary-button{
+            background-color: var(--white);
+            border-radius: .8rem;
+            border: .1rem solid var(--hospital-green);
+            color: var(--hospital-green);
             text-align: center;
             width: 100%;
             cursor: pointer;
@@ -105,6 +109,12 @@
             .logo {
                 display: block;
             }
+            .signup-button {
+                width: 30rem;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 24px;
+            }
         }
     </style>
 </head>
@@ -112,17 +122,18 @@
     <div class="login">
         <div class="form-container">
             <img src="./Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo" />
+            <form action="/" class="form">
+                <label for="email" class="label">Email address</label>
+                <input type="text" id="email" placeholder="youremail@example.com" class="input input-password" />
 
-            <h1 class="title">Email has been sent!</h1>
-            <h2 class="subtitle">Please check your inbox for instructions on how to reset the password</h2>
-            <div class="email-image">
-                <img src="./Platzi_YardSale_Icons/email.svg" alt="email">
-            </div>
-            <button class="primary-button login-button">Log in</button> 
-            <p class="resend">
-                <span>Didn't receive the email? </span>
-                <a href="/">Resend</a>
-            </p>
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" placeholder="**************" class="input input-password" />
+
+                <input type"submit" value="Log in" class="primary-button login-button">
+                <a href="/">Forgot my password</a>
+
+                <button class="secondary-button signup-button">Sign up</button>
+            </form>
         </div>
     </div>
 </body>
