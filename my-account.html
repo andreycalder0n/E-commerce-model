@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password</title>
+    <title>My account</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
@@ -49,8 +49,8 @@
         }
         .title {
             font-size: var(--lg);
-            margin-bottom: 1.2rem;
-            text-align: center;
+            margin-bottom: 3.2rem;
+            text-align: left;
         }
         .subtitle {
             color: var(--very-light-pink);
@@ -78,11 +78,34 @@
             padding: .8rem;
             margin-bottom: 1.2rem;
         }
+        .value {
+            color: var(--very-light-pink);
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: .8rem;
+            height: 3.2rem;
+            font-size: var(--md);
+            padding: .8rem;
+            margin-bottom: 3.2rem;
+        }
         .primary-button{
             background-color: var(--hospital-green);
             border-radius: .8rem;
             border: none;
             color: var(--white);
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            cursor: hand;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 5rem;
+        }
+        .secondary-button{
+            background-color: var(--white);
+            border-radius: .8rem;
+            border: .1rem solid var(--hospital-green);
+            color: var(--hospital-green);
             text-align: center;
             width: 100%;
             cursor: pointer;
@@ -99,25 +122,31 @@
             .logo {
                 display: block;
             }
+            .edit-button {
+                width: 30rem;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 24px;
+            }
         }
     </style>
 </head>
 <body>
     <main class="login">
         <div class="form-container">
-            <img src="./Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo" />
-
-            <h1 class="title">Create a new password</h1>
-            <h2 class="subtitle">Enter a new password for your account</h2>
+            <h1 class="title">My account</h1>
 
             <form action="/" class="form">
+                <label for="name" class="label">Name</label>
+                <p class="value">My name</p>
+
+                <label for="email" class="label">Email address</label>
+                <p class="value">myemail@example.com</p>
+
                 <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="**************" class="input input-password" />
+                <p class="value">**********</p>
 
-                <label for="new-password" class="label">Password</label>
-                <input type="password" id="new-password" placeholder="**************" class="input input-password" />
-
-                <input type"submit" value="Confirm" class="primary-button login-button">
+                <input type"submit" value="Edit account" class="secondary-button edit-button">
             </form>
         </div>
     </main>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password</title>
+    <title>Email Sent</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
@@ -40,6 +40,7 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 30rem;
+            justify-items: center;
         }
         .logo {
             width: 15rem;
@@ -51,6 +52,7 @@
             font-size: var(--lg);
             margin-bottom: 1.2rem;
             text-align: center;
+            font-weight: bold;
         }
         .subtitle {
             color: var(--very-light-pink);
@@ -60,23 +62,27 @@
             margin-bottom: 3.2rem;
             text-align: center;
         }
-        .form {
-            display: flex;
-            flex-direction: column;
-        }
-        .label {
-            font-size: var(--sm);
-            font-weight: bold;
-            margin-bottom: .4rem;
-        }
-        .input {
+        .email-image {
+            width: 100%;
+            height: 13.2rem;
+            border-radius: 50%;
             background-color: var(--text-input-field);
-            border: none;
-            border-radius: .8rem;
-            height: 3.2rem;
-            font-size: var(--md);
-            padding: .8rem;
-            margin-bottom: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .email-image img {
+            width: 8rem;
+        }
+        .resend {
+            font-size: var(--sm);
+        }
+        .resend span {
+            color: var(--very-light-pink);
+        }
+        .resend a {
+            color: var(--hospital-green);
+            text-decoration: none;
         }
         .primary-button{
             background-color: var(--hospital-green);
@@ -107,18 +113,16 @@
         <div class="form-container">
             <img src="./Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo" />
 
-            <h1 class="title">Create a new password</h1>
-            <h2 class="subtitle">Enter a new password for your account</h2>
-
-            <form action="/" class="form">
-                <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="**************" class="input input-password" />
-
-                <label for="new-password" class="label">Password</label>
-                <input type="password" id="new-password" placeholder="**************" class="input input-password" />
-
-                <input type"submit" value="Confirm" class="primary-button login-button">
-            </form>
+            <h1 class="title">Email has been sent!</h1>
+            <h2 class="subtitle">Please check your inbox for instructions on how to reset the password</h2>
+            <div class="email-image">
+                <img src="./Platzi_YardSale_Icons/email.svg" alt="email">
+            </div>
+            <button class="primary-button login-button">Log in</button> 
+            <p class="resend">
+                <span>Didn't receive the email? </span>
+                <a href="/">Resend</a>
+            </p>
         </div>
     </main>
 </body>
