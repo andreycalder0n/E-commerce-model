@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81fd9d3b63.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+           --very-light-pink: #767474;
+           --hospital-green: #acd9b2;
+           --text-input-field: #f7f7f7;
+           --white: #ffffff;
+           --black: #000000;
+           --sm: 1.4rem;
+           --md: 1.6rem;
+           --lg: 1.8rem;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .primary-button{
+            background-color: var(--hospital-green);
+            border-radius: .8rem;
+            border: none;
+            color: var(--white);
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            cursor: hand;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-photo">
+            <img src="./Platzi_YardSale_Icons/icon_close.png" alt="close" />
+            <img src="./Products_imgs/skate.jpg" alt="generic skate"/>
+        </div>
+
+        <div class="product-info">
+            <p>$100.00</p>
+            <p>Skate</p>
+            <p>That's the most common skateboard. Unlike other types of boards, it reaches lower speeds, however it is its design that makes it perfect for performing tricks, generally on ramps.</p>
+        </div>
+
+        <button class="primary-button">
+            <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping cart icon" />
+            Add to cart
+        </button>
+    </aside>
+</body>
+</html>
