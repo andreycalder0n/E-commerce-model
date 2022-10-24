@@ -30,59 +30,106 @@
         html{
             font-size: 62.5%;
         }
+        .title{
+            font-size: var(lg);
+            margin-bottom: 4rem;
+        }
+        .my-order-container{
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+            margin-top: 4rem;   
+        }
+        .my-order-information {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: var(--text-input-field);
+        }
+        .my-order-information .date-amount{
+            display: flex;
+            flex-direction: column;
+        }
+        .my-order-information .date-amount span:nth-child(1){
+            font-weight: bold;
+            color: var(--black);
+        }
+        .my-order-shopping-cart {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .my-order-shopping-cart .product-on-cart {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: auto;
+            margin-top: 1.2rem;
+            margin-right: 8rem;
+            width: 100%;
+        }
+        .product-on-cart .product-img{
+            width: 8rem;
+            height: 8rem;
+            border-radius: 2rem;
+            object-fit: cover;
+        }
+        p {
+            font-size: var(--md);
+        }
+        #price {
+            font-weight: bold;
+            color: #454545;
+        }
     </style>
 </head>
 <body>
     <main class="my-order-container">
+        <div>
+            <h1 class="title">My order</h1>
+        </div>
         <div class="my-order-information">
-            <p>
+            <p class="date-amount">
                 <span>10.25.2022</span>
                 <span>6 articles</span>
             </p>
-            <p>$430.00</p>
+            <p id="price">$430.00</p>
         </div>
         <div class="my-order-shopping-cart">
             <div class="product-on-cart">
-                <figure>
-                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla">
-                </figure>
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
                 <p>Skate</p>
-                <p>$100.00</p>
+                <p id="price">$100.00</p>
             </div>
             <div class="product-on-cart">
-                <figure>
-                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla">
-                </figure>
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
                 <p>Skate</p>
-                <p>$100.00</p>
+                <p id="price">$100.00</p>
             </div>
             <div class="product-on-cart">
-                <figure>
-                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla">
-                </figure>
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
                 <p>Skate</p>
-                <p>$100.00</p>
+                <p id="price">$100.00</p>
             </div>
             <div class="product-on-cart">
-                <figure>
-                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla">
-                </figure>
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
                 <p>Skate</p>
-                <p>$100.00</p>
+                <p id="price">$100.00</p>
             </div>
             <div class="product-on-cart">
-                <figure>
-                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla">
-                </figure>
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
                 <p>Skate</p>
-                <p>$100.00</p>
+                <p id="price">$100.00</p>
             </div>
             <div class="product-on-cart">
-                <figure>
-                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla">
-                </figure>
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
                 <p>Skate</p>
-                <p>$100.00</p>
+                <p id="price">$100.00</p>
             </div>
         </div>
     </main>
