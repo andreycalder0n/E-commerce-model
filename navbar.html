@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81fd9d3b63.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+           --very-light-pink: #767474;
+           --hospital-green: #acd9b2;
+           --text-input-field: #f7f7f7;
+           --white: #ffffff;
+           --black: #000000;
+           --sm: 1.4rem;
+           --md: 1.6rem;
+           --lg: 1.8rem;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .menu {
+            display: none;
+        }
+        .logo {
+            width: 12rem;
+        }
+        ul {
+            list-style: none;
+            margin-top: 1.4rem;
+            display: flex;
+        }
+        a {
+            font-size: var(--md);
+        }
+        p {
+            font-size: var(--md);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .1rem solid var(--very-light-pink);
+        }
+        .navbar .navbar-left {
+            display: flex;
+            margin-left: 1.2rem;
+            align-items: center;
+        }
+        .navbar .navbar-left ul li{
+            margin-left: 1.2rem;
+        }
+        .navbar .navbar-right {
+            display: flex;
+            margin-right: 1.2rem;
+        }
+        .navbar .navbar-right ul li {
+            display: flex;
+            align-items: center;
+            margin-right: 1.2rem;
+        }
+        .navbar-left ul li a {
+            text-decoration: none;
+            color: var(--very-light-pink);
+            border: .05rem solid var(--white);
+            border-radius: .8rem;
+        }
+        .navbar-left ul li a:hover {
+            border: .1rem solid var(--hospital-green);
+            color: var(--hospital-green);
+        }
+        .navbar-shopping-cart {
+            position: relative;
+        }
+        .navbar-shopping-cart div {
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: absolute;
+            top: 1rem;
+            right: 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 640px) {
+            .menu {
+                display: block;
+                margin-left: 1.2rem;
+            }
+            .navbar-left ul {
+                display: none;
+            }
+            .navbar .navbar-right .email {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./Platzi_YardSale_Icons/icon_menu.svg" alt="menu" class="menu" />
+    
+            <section class="navbar-left">
+                <img src="./Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo de yard sale" class="logo" />
+                <ul>
+                    <li><a href="">All</a></li>
+                    <li><a href="">Clothes</a></li>
+                    <li><a href="">Electronics</a></li>
+                    <li><a href="">Furniture</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </section>
+            <section class="navbar-right">
+                <ul>
+                    <li class="email">
+                        <p>youremail@example.com</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="navbar-shopping-cart">
+                        <img src="./Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart" class="shopping-cart" />
+                        <div>2</div>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+</body>
+</html>
