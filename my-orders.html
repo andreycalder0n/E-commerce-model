@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My order</title>
+    <title>My orders</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81fd9d3b63.js" crossorigin="anonymous"></script>
     <style>
         :root {
            --very-light-pink: #767474;
@@ -45,12 +46,10 @@
             margin-top: 4rem;   
         }
         .my-order-information {
-            width: 80%;
+            width: 100%;
             display: flex;
             justify-content: space-evenly;
-            background-color: var(--text-input-field);
             align-items: center;
-            border-radius: 1.6rem;
         }
         .my-order-information .date-amount{
             display: flex;
@@ -59,27 +58,6 @@
         .my-order-information .date-amount span:nth-child(1){
             font-weight: bold;
             color: var(--black);
-        }
-        .my-order-shopping-cart {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-        .my-order-shopping-cart .product-on-cart {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: auto;
-            margin-top: 1.2rem;
-            margin-right: 8rem;
-            width: 100%;
-        }
-        .product-on-cart .product-img{
-            width: 8rem;
-            height: 8rem;
-            border-radius: 2rem;
-            object-fit: cover;
         }
         p {
             font-size: var(--md);
@@ -93,7 +71,7 @@
 <body>
     <main class="my-order-container">
         <div>
-            <h1 class="title">My order</h1>
+            <h1 class="title">My orders</h1>
         </div>
         <div class="my-order-information">
             <p class="date-amount">
@@ -101,38 +79,33 @@
                 <span>6 articles</span>
             </p>
             <p id="price">$430.00</p>
+            <a><i class="fa-solid fa-chevron-right"></i></a>
         </div>
-        <div class="my-order-shopping-cart">
-            <div class="product-on-cart">
-                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
-                <p>Skate</p>
-                <p id="price">$100.00</p>
-            </div>
-            <div class="product-on-cart">
-                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
-                <p>Skate</p>
-                <p id="price">$100.00</p>
-            </div>
-            <div class="product-on-cart">
-                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
-                <p>Skate</p>
-                <p id="price">$100.00</p>
-            </div>
-            <div class="product-on-cart">
-                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
-                <p>Skate</p>
-                <p id="price">$100.00</p>
-            </div>
-            <div class="product-on-cart">
-                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
-                <p>Skate</p>
-                <p id="price">$100.00</p>
-            </div>
-            <div class="product-on-cart">
-                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
-                <p>Skate</p>
-                <p id="price">$100.00</p>
-            </div>
+        <div class="my-order-information">
+            <p class="date-amount">
+                <span>10.25.2022</span>
+                <span>6 articles</span>
+            </p>
+            <p id="price">$430.00</p>
+            <a><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="my-order-information">
+            <p class="date-amount">
+                <span>10.25.2022</span>
+                <span>6 articles</span>
+            </p>
+            <p id="price">$430.00</p>
+            <a><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="my-order-information">
+            <p class="date-amount">
+                <span>10.25.2022</span>
+                <span>6 articles</span>
+            </p>
+            <p id="price">$430.00</p>
+            <a><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
         </div>
     </main>
 </body>
