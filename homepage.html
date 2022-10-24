@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New account</title>
+    <title>Sale</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
@@ -35,6 +35,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, 24rem);
             gap: 2.4rem;
+            place-content: center;
         }
         .product-card {
             width: 24rem;
@@ -50,6 +51,19 @@
             justify-content: space-between;
             align-items: center;
             padding: auto;
+            margin-top: 1.2rem;
+        }
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: .4rem;
+        }
+        .product-info div p:nth-child(2) {
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink);
         }
         .product-card figure img {
             width: 3.6rem;

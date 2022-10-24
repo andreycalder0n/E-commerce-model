@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        :root {
+           --very-light-pink: #767474;
+           --hospital-green: #acd9b2;
+           --text-input-field: #f7f7f7;
+           --white: #ffffff;
+           --black: #000000;
+           --sm: 1.4rem;
+           --md: 1.6rem;
+           --lg: 1.8rem;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        h1 {
+            font-size: var(--lg);
+        }
+        .mobile-menu {
+            padding: 2.4rem;
+        }
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+            font-size: var(--md);
+        }
+    
+        .mobile-menu ul {
+            list-style: none;
+            margin-top: 2.4rem;
+        }    
+        .mobile-menu ul li {
+            margin-top: .8rem;
+        }    
+        .mobile-menu .categories li {
+            margin-left: .4rem;
+        }
+        .mobile-menu .sign-out-container{
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 2.4rem;
+        }
+        .mobile-menu .sign-out-container ul li p {
+            font-size: var(--sm);
+            font-weight: 300;
+        }     
+        .mobile-menu .sign-out-container ul li a {
+            color:  var(--hospital-green);
+            font-size: var(--sm);
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <div class="categories">
+            <h1>CATEGORIES</h1>
+            <ul>
+                <li><a href="/">All</a></li>
+                <li><a href="/">Clothes</a></li>
+                <li><a href="/">Electronics</a></li>
+                <li><a href="/">Furnitures</a></li>
+                <li><a href="/">Toys</a></li>
+                <li><a href="/">Others</a></li>
+            </ul>
+        </div>
+        <div class="Myself">
+            <ul>
+                <li><a href="/">My orders</a></li>
+                <li><a href="/">My account</a></li>
+            </ul>
+        </div>
+        <div class="sign-out-container">
+            <ul>
+                <li><p>youremail@example.com</p></li>
+                <li><a href="/">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        :root {
+           --very-light-pink: #767474;
+           --hospital-green: #acd9b2;
+           --text-input-field: #f7f7f7;
+           --white: #ffffff;
+           --black: #000000;
+           --sm: 1.4rem;
+           --md: 1.6rem;
+           --lg: 1.8rem;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .desktop-menu{
+            width: 14rem;
+            height: auto;
+            border: .1rem solid var(--very-light-pink);
+            border-radius: .6rem;
+            padding: 2rem 2rem 0 2rem;
+        }
+        .desktop-menu ul {
+            list-style: none;
+        }
+        .desktop-menu ul li{
+            text-align: end;
+        }
+        .desktop-menu ul li a{
+            color: var(--black);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+        .desktop-menu ul li:last-child {
+            padding-top: 2rem;
+            border-top: .1rem solid var(--very-light-pink);
+        }
+        .desktop-menu ul li:not(:last-child) {
+            font-weight: bold;
+            font-size: var(--md);
+        }
+        .desktop-menu ul li:last-child a{
+            color: var(--hospital-green);
+            font-size: var(--sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li>
+                <a href="/" class="title">My orders</a>
+            </li>
+        <ul>
+            <li>
+                <a href="/">My account</a>
+            </li>
+        <ul>
+            <li>
+                <a href="/">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
