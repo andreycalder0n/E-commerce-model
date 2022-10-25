@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Quicksand:wght@300;500;700&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81fd9d3b63.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+           --very-light-pink: #767474;
+           --hospital-green: #acd9b2;
+           --text-input-field: #f7f7f7;
+           --white: #ffffff;
+           --black: #000000;
+           --sm: 1.4rem;
+           --md: 1.6rem;
+           --lg: 1.8rem;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            border: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .title{
+            font-size: var(lg);
+            margin-left: 2rem;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            margin-left: 4rem;
+        }
+        .primary-button{
+            background-color: var(--hospital-green);
+            border-radius: .8rem;
+            border: none;
+            color: var(--white);
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            cursor: hand;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 5rem;
+        }
+        .my-order-container{
+            width: 34rem;
+            padding-bottom: 2.4rem;
+            position: absolute;
+            right: 0;
+        }
+        .my-order-shopping-cart {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .my-order-shopping-cart .product-on-cart {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: auto;
+            margin-top: 1.2rem;
+            margin-right: 8rem;
+            width: 100%;
+        }
+        .product-on-cart .product-img{
+            width: 8rem;
+            height: 8rem;
+            border-radius: 2rem;
+            object-fit: cover;
+        }
+        .my-order-information {
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: var(--text-input-field);
+            align-items: center;
+            border-radius: 1.6rem;
+        }
+        .my-order-information .date-amount{
+            display: flex;
+            flex-direction: column;
+        }
+        .my-order-information p:nth-child(1){
+            font-weight: bold;
+            color: var(--black);
+        }
+        .icon-close {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        .icon-close:hover {
+            cursor: pointer;
+        }
+        p {
+            font-size: var(--md);
+        }
+        i {
+            font-size: 1.6rem;
+        }
+        #price {
+            font-weight: bold;
+            color: #454545;
+        }
+        @media (max-width: 640px) {
+            .my-order-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="my-order-container">
+        <div class="title-container">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h1 class="title">Shopping cart</h1>
+        </div>
+        <div class="my-order-shopping-cart">
+            <div class="product-on-cart">
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                <p>Skate</p>
+                <p id="price">$100.00</p>
+                <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+            </div>
+            <div class="product-on-cart">
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                <p>Skate</p>
+                <p id="price">$100.00</p>
+                <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+            </div>
+            <div class="product-on-cart">
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                <p>Skate</p>
+                <p id="price">$100.00</p>
+                <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+            </div>
+            <div class="product-on-cart">
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                <p>Skate</p>
+                <p id="price">$100.00</p>
+                <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+            </div>
+            <div class="product-on-cart">
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                <p>Skate</p>
+                <p id="price">$100.00</p>
+                <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+            </div>
+            <div class="product-on-cart">
+                <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                <p>Skate</p>
+                <p id="price">$100.00</p>
+                <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+            </div>
+        </div>
+        <div class="my-order-information">
+            <p>
+                Total
+            </p>
+            <p id="price">$600.00</p>
+        </div>
+        <button class="primary-button checkout-button">
+            Checkout
+        </button>
+    </main>
+</body>
+</html>
