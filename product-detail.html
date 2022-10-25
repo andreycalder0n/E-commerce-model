@@ -27,9 +27,64 @@
             box-sizing: border-box;
             padding: 0;
             border: 0;
+            margin: 0;
         }
         html{
             font-size: 62.5%;
+        }
+        .product-detail {
+            width: 34rem;
+            padding-bottom: 2.4rem;
+            position: absolute;
+            right: 0;
+        }
+        .product-photo {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-photo .product-detail-close {
+            position: absolute;
+            width: 1.4rem;
+            height: 1.4rem;
+            top: 2rem;
+            left: 2rem;
+            background-color: var(--white);
+            z-index: 2;
+            padding: 1.2rem;
+            border-radius: 50%;
+        }
+        .product-photo .product-detail-close:hover {
+            cursor:pointer;
+        }
+        .product-photo .product-img {
+            width: 100%;
+            height: 36rem;
+            object-fit: cover;
+            border-radius: 0 0 2rem 2rem;
+        }
+        .product-info {
+            margin: 2.4rem 2.4rem 0 2.4rem;
+        }
+        .product-info p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: .4rem;
+        }
+        .product-info p:nth-child(2) {
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 3.2rem;
+        }
+        .product-info p:nth-child(3) {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 3.2rem;
         }
         .primary-button{
             background-color: var(--hospital-green);
@@ -44,13 +99,28 @@
             font-weight: bold;
             height: 5rem;
         }
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .points i {
+            margin-top: .4rem;
+            font-size: var(--md);
+        }
+        @media (max-width: 640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <aside class="product-detail">
         <div class="product-photo">
-            <img src="./Platzi_YardSale_Icons/icon_close.png" alt="close" />
-            <img src="./Products_imgs/skate.jpg" alt="generic skate"/>
+            <img src="./Platzi_YardSale_Icons/icon_close.png" alt="close" class="product-detail-close"/>
+            <img src="./Products_imgs/skate.jpg" alt="generic skate" class="product-img"/>
+            <div class="points"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
 
         <div class="product-info">
@@ -59,7 +129,7 @@
             <p>That's the most common skateboard. Unlike other types of boards, it reaches lower speeds, however it is its design that makes it perfect for performing tricks, generally on ramps.</p>
         </div>
 
-        <button class="primary-button">
+        <button class="primary-button add-to-cart-button">
             <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="shopping cart icon" />
             Add to cart
         </button>
