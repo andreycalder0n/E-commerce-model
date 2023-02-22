@@ -164,7 +164,7 @@ p {
     font-weight: 400;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
     .menu {
         display: block;
         margin-left: 1.2rem;
@@ -173,6 +173,15 @@ p {
         display: none;
     }
     .navbar .navbar-right .email {
+        display: none;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .mobile-menu {
         display: none;
     }
 }
