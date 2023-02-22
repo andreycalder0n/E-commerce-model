@@ -1,9 +1,14 @@
 const menuEmail = document.querySelector('.email');
 const desktopMenu = document.querySelector('.desktop-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const iconMenu = document.querySelector('.menu')
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
+iconMenu.addEventListener('click', toggleMobileMenu);
 
 function toggleDesktopMenu() {
-    console.log("click");
     desktopMenu.classList.toggle('inactive');
+}
+function toggleMobileMenu() {
+    mobileMenu.classList.toggle('inactive');
 }
