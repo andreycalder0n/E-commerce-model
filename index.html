@@ -40,23 +40,23 @@
                     </li>
                 </ul>
             </section>
-            <div class="desktop-menu inactive">
-                <ul>
-                    <li>
-                        <a href="/" class="title">My orders</a>
-                    </li>
-                <ul>
-                    <li>
-                        <a href="/">My account</a>
-                    </li>
-                <ul>
-                    <li>
-                        <a href="/">Sign out</a>
-                    </li>
-                </ul>
-            </div>
             
         </nav>
+        <div class="desktop-menu inactive">
+            <ul>
+                <li>
+                    <a href="/" class="title">My orders</a>
+                </li>
+            <ul>
+                <li>
+                    <a href="/">My account</a>
+                </li>
+            <ul>
+                <li>
+                    <a href="/">Sign out</a>
+                </li>
+            </ul>
+        </div>
         <div class="mobile-menu inactive">
             <div class="categories">
                 <h1>CATEGORIES</h1>
@@ -83,5 +83,48 @@
             </div>
         </div>
     </header>
+    <main>
+        <div class="my-order-container inactive">
+            <div class="title-container">
+                <i class="fa-solid fa-arrow-left"></i>
+                <h1 class="title">Shopping cart</h1>
+            </div>
+            <div class="my-order-shopping-cart">
+                <div class="product-on-cart">
+                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                    <p>Skate</p>
+                    <p id="price">$100.00</p>
+                    <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+                </div>
+                <div class="product-on-cart">
+                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                    <p>Skate</p>
+                    <p id="price">$100.00</p>
+                    <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+                </div>
+                <div class="product-on-cart">
+                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                    <p>Skate</p>
+                    <p id="price">$100.00</p>
+                    <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+                </div>
+                <div class="product-on-cart">
+                    <img src="./Products_imgs/skate.jpg" alt="skateboard amarilla" class="product-img" />
+                    <p>Skate</p>
+                    <p id="price">$100.00</p>
+                    <img src="./Platzi_YardSale_Icons/icon_close.png" alt="icon close" class="icon-close"/>
+                </div>
+            </div>
+            <div class="my-order-information">
+                <p>
+                    Total
+                </p>
+                <p id="price">$600.00</p>
+            </div>
+            <button class="primary-button checkout-button">
+                Checkout
+            </button>
+        </div>
+    </main> 
 </body>
 </html>

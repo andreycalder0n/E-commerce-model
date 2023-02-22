@@ -131,6 +131,7 @@ p {
     position: absolute;
     top: 6rem;
     padding: 2.4rem;
+    background-color: var(--white);
 }
 .mobile-menu a {
     text-decoration: none;
@@ -164,6 +165,91 @@ p {
     font-weight: 400;
 }
 
+/*shopping-cart*/
+.title{
+    font-size: var(lg);
+    margin-left: 2rem;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: .8rem;
+    border: none;
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    cursor: hand;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+}
+.my-order-container{
+    width: 36rem;
+    padding: 0 2.4rem;
+    position: absolute;
+    right: 0;
+    background-color: var(--white);
+}
+.my-order-shopping-cart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.my-order-shopping-cart .product-on-cart {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: auto;
+    margin-top: 1.2rem;
+    margin-right: 8rem;
+    width: 100%;
+}
+.product-on-cart .product-img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.my-order-information {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--text-input-field);
+    align-items: center;
+    border-radius: 1.6rem;
+}
+.my-order-information .date-amount{
+    display: flex;
+    flex-direction: column;
+}
+.my-order-information p:nth-child(1){
+    font-weight: bold;
+    color: var(--black);
+}
+.icon-close {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.icon-close:hover {
+    cursor: pointer;
+}
+p {
+    font-size: var(--md);
+}
+i {
+    font-size: 1.6rem;
+}
+#price {
+    font-weight: bold;
+    color: #454545;
+}
+
 @media screen and (max-width: 640px) {
     .menu {
         display: block;
@@ -177,6 +263,9 @@ p {
     }
     .desktop-menu {
         display: none;
+    }
+    .my-order-container {
+        width: 100%;
     }
 }
 
