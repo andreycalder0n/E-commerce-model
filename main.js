@@ -62,64 +62,64 @@ function closeProductDetail() {
 const productList = [];
 
 productList.push({
-    name: 'Garden',
+    name: 'Umbrella',
     price: 100,
-    image: './Products_imgs/garden.jpg'
+    image: './Images/umbrella.jpg'
 });
 productList.push({
     name: 'Shoes',
     price: 50,
-    image: './Products_imgs/shoes.jpg'
+    image: './Images/shoes.jpg'
 });
 productList.push({
     name: 'Bag',
     price: 150,
-    image: './Products_imgs/bag.jpg'
+    image: './Images/bag.jpg'
 });
 productList.push({
-    name: 'Garden',
+    name: 'Umbrella',
     price: 100,
-    image: './Products_imgs/garden.jpg'
+    image: './Images/umbrella.jpg'
 });
 productList.push({
     name: 'Shoes',
     price: 50,
-    image: './Products_imgs/shoes.jpg'
+    image: './Images/shoes.jpg'
 });
 productList.push({
     name: 'Bag',
     price: 150,
-    image: './Products_imgs/bag.jpg'
+    image: './Images/bag.jpg'
 });
 productList.push({
-    name: 'Garden',
+    name: 'Umbrella',
     price: 100,
-    image: './Products_imgs/garden.jpg'
+    image: './Images/umbrella.jpg'
 });
 productList.push({
     name: 'Shoes',
     price: 50,
-    image: './Products_imgs/shoes.jpg'
+    image: './Images/shoes.jpg'
 });
 productList.push({
     name: 'Bag',
     price: 150,
-    image: './Products_imgs/bag.jpg'
+    image: './Images/bag.jpg'
 });
 productList.push({
-    name: 'Garden',
+    name: 'Umbrella',
     price: 100,
-    image: './Products_imgs/garden.jpg'
+    image: './Images/umbrella.jpg'
 });
 productList.push({
     name: 'Shoes',
     price: 50,
-    image: './Products_imgs/shoes.jpg'
+    image: './Images/shoes.jpg'
 });
 productList.push({
     name: 'Bag',
     price: 150,
-    image: './Products_imgs/bag.jpg'
+    image: './Images/bag.jpg'
 });
 
 function renderProducts(array) {
